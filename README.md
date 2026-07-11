@@ -1,27 +1,95 @@
-# HotelApp
+# 🏨 Hotel Reservation System
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.6.
+A full-featured hotel reservation management application built with **Angular 16** and **Bootstrap 5.3**.
 
-## Development server
+## ✨ Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Create Reservations** — Add new guest reservations with check-in/check-out dates, guest details, and room assignment
+- **View All Reservations** — Browse all reservations in a clean, responsive table layout
+- **Edit Reservations** — Update existing reservation details seamlessly
+- **Delete Reservations** — Remove reservations with a single click
+- **Form Validation** — Real-time validation with user-friendly error messages
+- **Data Persistence** — Reservations are saved to `localStorage` so data persists across browser sessions
 
-## Code scaffolding
+## 🛠️ Tech Stack
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+| Technology | Purpose |
+|---|---|
+| Angular 16 | Frontend framework |
+| TypeScript | Type-safe development |
+| Bootstrap 5.3 | Responsive UI styling |
+| Reactive Forms | Form handling & validation |
+| localStorage | Client-side data persistence |
 
-## Build
+## 📁 Project Structure
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```
+src/app/
+├── home/                    # Landing page with navigation
+├── models/
+│   └── reservation.ts       # Reservation data model (interface)
+├── reservation/
+│   ├── reservation.service.ts   # CRUD operations & localStorage logic
+│   └── reservation.module.ts    # Feature module
+├── reservation-form/        # Create & Edit reservation form
+├── reservation-list/        # Reservation table with actions
+├── app-routing.module.ts    # Route configuration
+├── app.module.ts            # Root module
+└── app.component.*          # Root component
+```
 
-## Running unit tests
+## 🚀 Getting Started
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Prerequisites
 
-## Running end-to-end tests
+- **Node.js** (v16 or higher)
+- **Angular CLI** v16.1.6
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Installation
 
-## Further help
+```bash
+# Clone the repository
+git clone https://github.com/srjay999-giT/hotel-appointment-system.git
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# Navigate to the project directory
+cd hotel-appointment-system
+
+# Install dependencies
+npm install
+```
+
+### Run the Development Server
+
+```bash
+npm start
+```
+
+Navigate to **http://localhost:4200/**. The app will automatically reload on file changes.
+
+## 📌 Routes
+
+| Route | Page |
+|---|---|
+| `/` | Home — Welcome page with navigation buttons |
+| `/new` | Create — New reservation form |
+| `/list` | List — View all reservations |
+| `/edit/:id` | Edit — Update an existing reservation |
+
+## 🧪 Running Tests
+
+```bash
+# Unit tests via Karma
+npm test
+```
+
+## 📦 Build for Production
+
+```bash
+ng build
+```
+
+Build artifacts will be stored in the `dist/` directory.
+
+## 📄 License
+
+This project is open source and available for educational purposes.
