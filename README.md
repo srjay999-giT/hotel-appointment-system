@@ -2,6 +2,8 @@
 
 A full-featured hotel reservation management application built with **Angular 16** and **Bootstrap 5.3**.
 
+### 🔗 [Live Demo → hotel-app-eta-sooty.vercel.app](https://hotel-app-eta-sooty.vercel.app)
+
 ## ✨ Features
 
 - **Create Reservations** — Add new guest reservations with check-in/check-out dates, guest details, and room assignment
